@@ -1,0 +1,26 @@
+.blog-posts {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__slider {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+      margin: 0 1rem;
+    }
+
+    .prev-button,
+    .next-button {
+      cursor: pointer;
+    }
+  }
+}
