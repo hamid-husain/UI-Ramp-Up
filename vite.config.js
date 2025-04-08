@@ -1,28 +1,9 @@
 import { defineConfig } from 'vite'
 import viteImagemin from 'vite-plugin-imagemin'
-import { VitePluginFonts } from 'vite-plugin-fonts'
 import autoprefixer from 'autoprefixer'
 
 export default defineConfig({
   plugins: [
-    VitePluginFonts({
-      google: {
-        families: [
-          {
-            name: 'Montserrat',
-            styles: 'ital,wght@0,100..900;1,100..900'
-          },
-          {
-            name: 'Roboto',
-            styles: 'wght@400;700'
-          },
-          {
-            name: 'Open Sans',
-            styles: 'wght@300;600'
-          }
-        ]
-      }
-    }),
     viteImagemin({
       gifsicle: {
         optimizationLevel: 7,
