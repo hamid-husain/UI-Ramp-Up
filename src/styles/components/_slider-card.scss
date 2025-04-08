@@ -1,3 +1,5 @@
+@use '../abstract' as *;
+
 .swiper {
   width: 90%;
   height: 90%;
@@ -6,21 +8,21 @@
 .slider-card {
   max-height: 24rem;
   max-width: 22rem;
-  background-color: white;
+  background-color: $color-white;
   margin: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: $slider-card-shadow 0px 4px 12px;
 
   &__ribbon {
     margin-top: 2rem;
     display: flex;
     padding-right: 1.5rem;
-    background-color: rgb(250, 250, 250);
+    background-color: $slider-card-ribbon-bg;
     &__left {
       border-radius: 0 0.2rem 0.2rem 0;
       margin-right: 1.52rem;
       height: 3rem;
       width: 0.25rem;
-      background-color: rgb(250, 101, 2);
+      background-color: $color-orange;
     }
 
     &__right {
@@ -32,18 +34,18 @@
         align-items: center;
         &__name {
           font-size: 1rem;
-          color: rgb(250, 101, 2);
+          color: $color-orange;
           margin-right: 0.5rem;
         }
         &__date {
           font-size: 0.8rem;
-          color: gray;
+          color: $color-grey;
         }
       }
       .bottom {
         margin-top: 0.5rem;
         font-size: 0.8rem;
-        color: gray;
+        color: $color-grey;
       }
     }
   }
@@ -58,7 +60,7 @@
     p {
       line-height: 1.2rem;
       font-size: 0.8rem;
-      color: rgb(92, 91, 91);
+      color: $color-grey;
     }
 
     button {
@@ -66,8 +68,8 @@
       height: 2.5rem;
       width: 6.5rem;
       background: none;
-      color: rgb(250, 101, 2);
-      border: 0.1rem solid rgb(250, 101, 2);
+      color: $color-orange;
+      border: 0.1rem solid $color-orange;
       border-radius: 0.2rem;
     }
   }

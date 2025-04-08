@@ -1,5 +1,6 @@
+@use '../abstract' as *;
+
 .blog-card {
-  /* border: 2px solid black; */
   margin-top: 2rem;
   height: 25vh;
   display: flex;
@@ -7,17 +8,15 @@
 
   &__image {
     border-radius: 0.2rem;
-    /* border: 2px solid red; */
     width: 10rem;
     height: 10rem;
-    background-image: url('/src/images/dog1.jpg');
+    background-image: url('/src/assets/images/dog1.jpg');
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
   }
 
   &__content {
-    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,21 +27,20 @@
     div {
       position: relative;
       top: -0.5rem;
-      /* border: 2px solid black; */
       font-size: 0.8rem;
-      color: rgb(87, 84, 84);
+      color: $latest-blogs-desc;
       padding-top: 1.5rem;
       padding-bottom: 0.8rem;
       padding-right: 0.5rem;
-      border-right: 0.15rem solid rgb(231, 231, 231);
+      border-right: 0.15rem solid $latest-blogs-card-content-border-right;
     }
 
     button {
       height: 2rem;
       width: 5rem;
       border-radius: 0.2rem;
-      background-color: rgb(250, 101, 2);
-      color: white;
+      background-color: $color-orange;
+      color: $color-white;
       font-size: 0.8rem;
       border: none;
       position: relative;
@@ -52,7 +50,7 @@
   }
 
   &__details {
-    color: rgb(87, 84, 84);
+    color: $color-grey;
     margin-left: 1.2rem;
     font-size: 0.8rem;
     display: flex;

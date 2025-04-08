@@ -1,28 +1,28 @@
+@use '../abstract' as *;
+
 .latest-blogs {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   &__top {
-    background-color: rgb(240, 237, 237);
+    background-color: $latest-blogs-bg;
     height: 20vh;
     width: 100vw;
   }
 
   &__main {
-    /* border: 2px solid pink; */
     position: relative;
     border-radius: 0.25rem;
     top: -4rem;
-    background-color: white;
+    background-color: $color-white;
     z-index: 1;
     width: 80vw;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: $latest-blogs-shadow 0px 5px 15px;
 
     &__header {
-      /* border: 2px solid purple; */
       padding-top: 1rem;
       margin: 2rem 2rem 1rem;
       position: relative;
@@ -31,10 +31,10 @@
 
       button {
         border: none;
-        background-color: rgb(250, 101, 2);
+        background-color: $color-orange;
         height: 2rem;
         width: 6rem;
-        color: white;
+        color: $color-white;
         font-size: 0.8rem;
         border-radius: 0.2rem;
         position: absolute;
@@ -43,7 +43,6 @@
     }
 
     &__content {
-      /* border: 2px solid brown; */
       padding: 0 3.5rem;
     }
 
@@ -57,9 +56,9 @@
         font-size: 0.9rem;
         height: 2.5rem;
         width: 11rem;
-        background-color: white;
-        color: rgb(250, 101, 2);
-        border: 0.1rem solid rgb(250, 101, 2);
+        background-color: $color-white;
+        color: $color-orange;
+        border: 0.1rem solid $color-orange;
         border-radius: 0.2rem;
       }
     }

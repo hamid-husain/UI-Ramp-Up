@@ -1,7 +1,7 @@
 import Swiper from 'swiper'
 import 'swiper/scss'
 
-import './styles/style.scss'
+import '@/styles/style.scss'
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 3,

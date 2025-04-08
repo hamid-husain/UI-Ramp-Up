@@ -1,10 +1,11 @@
+@use '../abstract' as *;
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .foot {
-  // background-color: red;
   height: 50vh;
   padding: 4rem 4rem;
   display: flex;
@@ -12,13 +13,12 @@ footer {
   justify-content: space-evenly;
 
   &__brand {
-    // border: 2px solid red;
     position: relative;
     max-width: 22rem;
     p {
       margin: 1rem 0;
       font-size: 0.9rem;
-      color: gray;
+      color: $color-grey;
     }
 
     &__socials {
@@ -28,24 +28,24 @@ footer {
         .linkedin,
         .instagram {
           margin: 1.5rem 3rem 1.5rem 0;
-          border: 0.1rem solid rgb(250, 101, 2);
+          border: 0.1rem solid $color-orange;
           padding: 1rem;
           width: 0.8rem;
           height: 0.8rem;
-          background: url('/src/images/facebook.png');
+          background: url('/src/assets/images/facebook.png');
           background-repeat: no-repeat;
           background-position: center;
           background-size: 0.6rem;
           border-radius: 50%;
         }
         .linkedin {
-          background: url('/src/images/linkedin.png');
+          background: url('/src/assets/images/linkedin.png');
           background-repeat: no-repeat;
           background-position: center;
           background-size: 1rem;
         }
         .instagram {
-          background: url(/src/images/instagram.png);
+          background: url('/src/assets/images/instagram.png');
           background-repeat: no-repeat;
           background-position: center;
           background-size: 1rem;
@@ -55,37 +55,34 @@ footer {
   }
 
   &__pages {
-    // border: 2px solid pink;
     padding: 1rem 0;
     margin: 0 4rem;
     ul {
       padding-top: 0.75rem;
       list-style: none;
       line-height: 2.5rem;
-      color: grey;
+      color: $color-grey;
     }
   }
 
   &__recent-blogs {
-    // border: 2px solid slateblue;
     padding: 1rem 0;
     margin: 0 4rem;
     ul {
       padding-top: 0.75rem;
       list-style: none;
       line-height: 2.5rem;
-      color: grey;
+      color: $color-grey;
     }
   }
 
   &__partners {
-    // border: 2px solid red;
     padding: 1rem 0;
     ul {
       padding-top: 0.75rem;
       list-style: none;
       line-height: 2rem;
-      color: grey;
+      color: $color-grey;
     }
   }
 }
@@ -93,11 +90,11 @@ footer {
 .hline {
   width: 88vw;
   height: 0.1rem;
-  background-color: rgb(224, 224, 224);
+  background-color: $footer-hline;
 }
 
 .copyright {
   margin: 3rem;
   font-size: 0.8rem;
-  color: rgb(121, 121, 121);
+  color: $color-grey;
 }
