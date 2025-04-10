@@ -57,6 +57,31 @@ export default defineConfig({
 
   build: {
     outDir: 'dist',
-    sourcemap: true
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: assetInfo => {
+          const ext = assetInfo.name?.split('.').pop()
+
+          if (ext === 'css') {
+            return 'src/styles/[name]-[hash][extname]'
+          }
+
+          if (['woff', 'woff2', 'ttf', 'otf', 'eot'].includes(ext)) {
+            return 'src/assets/fonts/[name]-[hash][extname]'
+          }
+
+          if (
+            ['png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'avif'].includes(ext)
+          ) {
+            return 'src/assets/images/[name]-[hash][extname]'
+          }
+
+          return 'src/[name]-[hash][extname]'
+        },
+        chunkFileNames: 'src/scripts/[name]-[hash].js',
+        entryFileNames: 'src/scripts/[name]-[hash].js'
+      }
+    }
   }
 })

@@ -1,5 +1,5 @@
 {
-  "semi": false,
+  "semi": true,
   "singleQuote": true,
   "tabWidth": 2,
   "useTabs": false,
@@ -12,7 +12,5 @@
   "insertPragma": false,
   "requirePragma": false,
   "quoteProps": "as-needed",
-  "trailingComma": "none",
-  "jsxSingleQuote": false,
-  "vueIndentScriptAndStyle": false
+  "trailingComma": "none"
 }

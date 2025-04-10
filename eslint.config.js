@@ -8,7 +8,7 @@ import prettierPlugin from 'eslint-plugin-prettier'
 
 export default defineConfig([
   {
-    files: ['**/*.{js,jsx,ts,tsx}'],
+    files: ['**/*.{js}'],
     languageOptions: {
       globals: {
         ...globals.browser,
@@ -42,7 +42,7 @@ export default defineConfig([
     settings: {
       'import/resolver': {
         node: {
-          extensions: ['.js', '.jsx', '.ts', '.tsx', '.scss']
+          extensions: ['.js', '.scss']
         }
       }
     }
