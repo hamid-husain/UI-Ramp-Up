@@ -35,10 +35,10 @@ nav {
     border-radius: 0.2rem;
     font-size: 0.8rem;
   }
-}
 
-.home_link {
-  color: $color-orange !important;
-  padding-bottom: 0.4rem;
-  border-bottom: 0.1rem solid $color-orange;
+  &__home_link {
+    color: $color-orange !important;
+    padding-bottom: 0.4rem;
+    border-bottom: 0.1rem solid $color-orange;
+  }
 }

@@ -1,11 +1,11 @@
-import Swiper from 'swiper'
-import 'swiper/scss'
+import Swiper from 'swiper/bundle'
 
 import '@/styles/style.scss'
+import { constants } from '@/scripts/constants'
 
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
-  spaceBetween: 30,
+  slidesPerView: constants.slidesPerView,
+  spaceBetween: constants.spaceBetweenSlides,
   grabCursor: true,
 
   navigation: {
