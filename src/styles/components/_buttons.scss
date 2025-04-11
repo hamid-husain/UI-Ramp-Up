@@ -1,0 +1,13 @@
+@use '../abstract' as *;
+
+button:focus {
+  outline: none;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+a:focus {
+  outline: none;
+  padding-bottom: px-to-rem(6.4);
+  border-bottom: 2px solid $color-orange;
+}

@@ -10,11 +10,11 @@ nav {
 
 .nav-list {
   position: relative;
-  right: -2rem;
+  right: px-to-rem(-32);
 
   ul {
     li {
-      margin: 1rem;
+      margin: px-to-rem(16);
       text-decoration: none;
       display: inline-block;
     }
@@ -23,22 +23,22 @@ nav {
   a {
     text-decoration: none;
     color: $color-black;
-    font-size: 0.8rem;
+    font-size: px-to-rem(12.8);
   }
 
   button {
     border: none;
     background-color: $color-orange;
-    height: 2rem;
-    width: 7rem;
+    height: px-to-rem(32);
+    width: px-to-rem(112);
     color: $color-white;
-    border-radius: 0.2rem;
-    font-size: 0.8rem;
+    border-radius: px-to-rem(3.2);
+    font-size: px-to-rem(12.8);
   }
 
   &__home_link {
     color: $color-orange !important;
-    padding-bottom: 0.4rem;
-    border-bottom: 0.1rem solid $color-orange;
+    padding-bottom: px-to-rem(6.4);
+    border-bottom: px-to-rem(1.6) solid $color-orange;
   }
 }

@@ -5,83 +5,91 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
 .foot {
   height: 50vh;
-  padding: 4rem 4rem;
+  padding: px-to-rem(64) px-to-rem(64);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
   &__brand {
     position: relative;
-    max-width: 22rem;
+    max-width: px-to-rem(352);
+
     p {
-      margin: 1rem 0;
-      font-size: 0.9rem;
+      margin: px-to-rem(16) 0;
+      font-size: px-to-rem(14.4);
       color: $color-grey;
     }
 
     &__socials {
       &__icons {
         display: flex;
+
         .facebook,
         .linkedin,
         .instagram {
-          margin: 1.5rem 3rem 1.5rem 0;
-          border: 0.1rem solid $color-orange;
-          padding: 1rem;
-          width: 0.8rem;
-          height: 0.8rem;
+          margin: px-to-rem(24) px-to-rem(48) px-to-rem(24) 0;
+          border: px-to-rem(1.6) solid $color-orange;
+          padding: px-to-rem(16);
+          width: px-to-rem(12.8);
+          height: px-to-rem(12.8);
           background: url('/src/assets/images/facebook.png');
           background-repeat: no-repeat;
           background-position: center;
-          background-size: 0.6rem;
+          background-size: px-to-rem(9.6);
           border-radius: 50%;
         }
+
         .linkedin {
           background: url('/src/assets/images/linkedin.png');
           background-repeat: no-repeat;
           background-position: center;
-          background-size: 1rem;
+          background-size: px-to-rem(16);
         }
+
         .instagram {
           background: url('/src/assets/images/instagram.png');
           background-repeat: no-repeat;
           background-position: center;
-          background-size: 1rem;
+          background-size: px-to-rem(16);
         }
       }
     }
   }
 
   &__pages {
-    padding: 1rem 0;
-    margin: 0 4rem;
+    padding: px-to-rem(16) 0;
+    margin: 0 px-to-rem(64);
+
     ul {
-      padding-top: 0.75rem;
+      padding-top: px-to-rem(12);
       list-style: none;
-      line-height: 2.5rem;
+      line-height: px-to-rem(40);
       color: $color-grey;
     }
   }
 
   &__recent-blogs {
-    padding: 1rem 0;
-    margin: 0 4rem;
+    padding: px-to-rem(16) 0;
+    margin: 0 px-to-rem(64);
+
     ul {
-      padding-top: 0.75rem;
+      padding-top: px-to-rem(12);
       list-style: none;
-      line-height: 2.5rem;
+      line-height: px-to-rem(40);
       color: $color-grey;
     }
   }
 
   &__partners {
-    padding: 1rem 0;
+    padding: px-to-rem(16) 0;
+
     ul {
-      padding-top: 0.75rem;
+      padding-top: px-to-rem(12);
       list-style: none;
-      line-height: 2rem;
+      line-height: px-to-rem(32);
       color: $color-grey;
     }
   }
@@ -89,12 +97,12 @@ footer {
 
 .hline {
   width: 88vw;
-  height: 0.1rem;
+  height: px-to-rem(1.6);
   background-color: $footer-hline;
 }
 
 .copyright {
-  margin: 3rem;
-  font-size: 0.8rem;
+  margin: px-to-rem(48);
+  font-size: px-to-rem(12.8);
   color: $color-grey;
 }

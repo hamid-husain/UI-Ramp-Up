@@ -1,15 +1,15 @@
 @use '../abstract' as *;
 
 .blog-card {
-  margin-top: 2rem;
+  margin-top: px-to-rem(32);
   height: 25vh;
   display: flex;
   align-items: center;
 
   &__image {
-    border-radius: 0.2rem;
-    width: 10rem;
-    height: 10rem;
+    border-radius: px-to-rem(3.2);
+    width: px-to-rem(160);
+    height: px-to-rem(160);
     background-image: url('/src/assets/images/dog1.jpg');
     background-position-x: center;
     background-position-y: center;
@@ -20,57 +20,57 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 1rem;
+    margin-left: px-to-rem(16);
     height: 25vh;
-    width: 35rem;
+    width: px-to-rem(560);
 
     div {
       position: relative;
-      top: -0.5rem;
-      font-size: 0.8rem;
+      top: px-to-rem(-8);
+      font-size: px-to-rem(12.8);
       color: $latest-blogs-desc;
-      padding-top: 1.5rem;
-      padding-bottom: 0.8rem;
-      padding-right: 0.5rem;
-      border-right: 0.15rem solid $latest-blogs-card-content-border-right;
+      padding-top: px-to-rem(24);
+      padding-bottom: px-to-rem(12.8);
+      padding-right: px-to-rem(8);
+      border-right: px-to-rem(2.4) solid $latest-blogs-card-content-border-right;
     }
 
     button {
-      height: 2rem;
-      width: 5rem;
-      border-radius: 0.2rem;
+      height: px-to-rem(32);
+      width: px-to-rem(80);
+      border-radius: px-to-rem(3.2);
       background-color: $color-orange;
       color: $color-white;
-      font-size: 0.8rem;
+      font-size: px-to-rem(12.8);
       border: none;
       position: relative;
-      top: 1.4rem;
-      right: -29rem;
+      top: px-to-rem(22.4);
+      right: px-to-rem(-464);
     }
   }
 
   &__details {
     color: $color-grey;
-    margin-left: 1.2rem;
-    font-size: 0.8rem;
+    margin-left: px-to-rem(19.2);
+    font-size: px-to-rem(12.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 1rem;
+    top: px-to-rem(16);
 
     ul {
       list-style: none;
     }
 
     li {
-      margin-bottom: 0.8rem;
+      margin-bottom: px-to-rem(12.8);
     }
 
     li::before {
       content: '#';
-      margin-right: 0.3rem;
+      margin-right: px-to-rem(4.8);
     }
   }
 }

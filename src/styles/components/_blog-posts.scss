@@ -1,5 +1,7 @@
+@use '../abstract' as *;
+
 .blog-posts {
-  margin-top: 2rem;
+  margin-top: px-to-rem(32);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +17,7 @@
     flex-direction: row;
     justify-content: center;
     img {
-      margin: 0 1rem;
+      margin: 0 px-to-rem(16);
     }
 
     .prev-button,

@@ -13,54 +13,54 @@
 
   &__main {
     position: relative;
-    border-radius: 0.25rem;
-    top: -4rem;
+    border-radius: px-to-rem(4);
+    top: px-to-rem(-64);
     background-color: $color-white;
     z-index: 1;
     width: 80vw;
     display: flex;
     flex-direction: column;
     box-shadow: $latest-blogs-shadow 0px 5px 15px;
+  }
 
-    &__header {
-      padding-top: 1rem;
-      margin: 2rem 2rem 1rem;
-      position: relative;
-      display: flex;
-      flex-direction: row;
+  &__header {
+    padding-top: px-to-rem(16);
+    margin: px-to-rem(32) px-to-rem(32) px-to-rem(16);
+    position: relative;
+    display: flex;
+    flex-direction: row;
 
-      button {
-        border: none;
-        background-color: $color-orange;
-        height: 2rem;
-        width: 6rem;
-        color: $color-white;
-        font-size: 0.8rem;
-        border-radius: 0.2rem;
-        position: absolute;
-        right: 1.2rem;
-      }
+    button {
+      border: none;
+      background-color: $color-orange;
+      height: px-to-rem(32);
+      width: px-to-rem(96);
+      color: $color-white;
+      font-size: px-to-rem(12.8);
+      border-radius: px-to-rem(3.2);
+      position: absolute;
+      right: px-to-rem(19.2);
     }
+  }
 
-    &__content {
-      padding: 0 3.5rem;
-    }
+  &__content {
+    padding: 0 px-to-rem(56);
+  }
 
-    &__bottom {
-      margin: 3rem 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
+  &__bottom {
+    margin: px-to-rem(48) 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-      button {
-        font-size: 0.9rem;
-        height: 2.5rem;
-        width: 11rem;
-        background-color: $color-white;
-        color: $color-orange;
-        border: 0.1rem solid $color-orange;
-        border-radius: 0.2rem;
-      }
+    button {
+      font-size: px-to-rem(14.4);
+      height: px-to-rem(40);
+      width: px-to-rem(176);
+      background-color: $color-white;
+      color: $color-orange;
+      border: px-to-rem(1.6) solid $color-orange;
+      border-radius: px-to-rem(3.2);
     }
   }
 }

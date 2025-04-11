@@ -6,71 +6,78 @@
 }
 
 .slider-card {
-  max-height: 24rem;
-  max-width: 22rem;
+  max-height: px-to-rem(384);
+  max-width: px-to-rem(352);
   background-color: $color-white;
-  margin: 2rem;
+  margin: px-to-rem(32);
   box-shadow: $slider-card-shadow 0px 4px 12px;
 
   &__ribbon {
-    margin-top: 2rem;
+    margin-top: px-to-rem(32);
     display: flex;
-    padding-right: 1.5rem;
+    padding-right: px-to-rem(24);
     background-color: $slider-card-ribbon-bg;
+
     &__left {
-      border-radius: 0 0.2rem 0.2rem 0;
-      margin-right: 1.52rem;
-      height: 3rem;
-      width: 0.25rem;
+      border-radius: 0 px-to-rem(3.2) px-to-rem(3.2) 0;
+      margin-right: px-to-rem(24.32);
+      height: px-to-rem(48);
+      width: px-to-rem(4);
       background-color: $color-orange;
     }
 
     &__right {
-      padding-top: 0.1rem;
+      padding-top: px-to-rem(1.6);
+
       .top {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
         &__name {
-          font-size: 1rem;
+          font-size: px-to-rem(16);
           color: $color-orange;
-          margin-right: 0.5rem;
+          margin-right: px-to-rem(8);
         }
+
         &__date {
-          font-size: 0.8rem;
+          font-size: px-to-rem(12.8);
           color: $color-grey;
         }
       }
+
       .bottom {
-        margin-top: 0.5rem;
-        font-size: 0.8rem;
+        margin-top: px-to-rem(8);
+        font-size: px-to-rem(12.8);
         color: $color-grey;
       }
     }
   }
 
   &__content {
-    padding: 0 2rem;
-    padding-bottom: 2rem;
+    padding: 0 px-to-rem(32);
+    padding-bottom: px-to-rem(32);
+
     .header {
-      margin: 1rem 0;
-      line-height: 1.7rem;
+      margin: px-to-rem(16) 0;
+      line-height: px-to-rem(27.2);
     }
+
     p {
-      line-height: 1.2rem;
-      font-size: 0.8rem;
+      line-height: px-to-rem(19.2);
+      font-size: px-to-rem(12.8);
       color: $color-grey;
     }
 
     button {
-      margin-top: 2rem;
-      height: 2.5rem;
-      width: 6.5rem;
+      margin-top: px-to-rem(32);
+      height: px-to-rem(40);
+      width: px-to-rem(104);
       background: none;
       color: $color-orange;
-      border: 0.1rem solid $color-orange;
-      border-radius: 0.2rem;
+      border: px-to-rem(1.6) solid $color-orange;
+      border-radius: px-to-rem(3.2);
     }
   }
 }
