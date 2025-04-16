@@ -4758,6 +4758,11 @@ sass@^1.86.3:
   optionalDependencies:
     "@parcel/watcher" "^2.4.1"
 
+scss-reset@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/scss-reset/-/scss-reset-1.4.6.tgz#6d69cd3c8ce988e860714636e5ad31361fccaba8"
+  integrity sha512-ioPmXUxVH0NFuNBPs88SolUkUuKYIIQ0CUGssx2yq8m4fuMxGLigjnpXa6JAC2j5w1p66JA33UDd+cKkFJp7yw==
+
 seek-bzip@^1.0.5:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/seek-bzip/-/seek-bzip-1.0.6.tgz#35c4171f55a680916b52a07859ecf3b5857f21c4"
