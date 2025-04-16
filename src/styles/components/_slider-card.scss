@@ -1,19 +1,18 @@
 @use '../abstract' as *;
 
 .swiper {
-  width: 90%;
   height: 90%;
 }
 
 .slider-card {
-  max-height: px-to-rem(384);
+  max-height: px-to-rem(400);
   max-width: px-to-rem(352);
   background-color: $color-white;
-  margin: px-to-rem(32);
+  margin: px-to-rem(24);
   box-shadow: $slider-card-shadow 0px 4px 12px;
 
   &__ribbon {
-    margin-top: px-to-rem(32);
+    margin-top: px-to-rem(28);
     display: flex;
     padding-right: px-to-rem(24);
     background-color: $slider-card-ribbon-bg;
@@ -27,7 +26,8 @@
     }
 
     &__right {
-      padding-top: px-to-rem(1.6);
+      padding-top: px-to-rem(4);
+      width: 100%;
 
       .top {
         display: flex;
@@ -38,12 +38,13 @@
         &__name {
           font-size: px-to-rem(16);
           color: $color-orange;
-          margin-right: px-to-rem(8);
+          @include text-clamp(100%, 1);
         }
 
         &__date {
           font-size: px-to-rem(12.8);
           color: $color-grey;
+          @include text-clamp(50%, 1);
         }
       }
 
@@ -51,6 +52,7 @@
         margin-top: px-to-rem(8);
         font-size: px-to-rem(12.8);
         color: $color-grey;
+        @include text-clamp(100%, 1);
       }
     }
   }
@@ -62,12 +64,14 @@
     .header {
       margin: px-to-rem(16) 0;
       line-height: px-to-rem(27.2);
+      @include text-clamp(100%, 4);
     }
 
     p {
       line-height: px-to-rem(19.2);
       font-size: px-to-rem(12.8);
       color: $color-grey;
+      @include text-clamp(100%, 4);
     }
 
     button {

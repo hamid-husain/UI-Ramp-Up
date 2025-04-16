@@ -1,5 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat';
+@use 'scss-reset/reset';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }

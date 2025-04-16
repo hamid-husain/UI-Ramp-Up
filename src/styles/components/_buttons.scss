@@ -1,13 +1,26 @@
 @use '../abstract' as *;
 
-button:focus {
-  outline: none;
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+button {
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    font-size 0.3s ease,
+    font-weight 0.3s ease;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    transform: scale(1.05);
+  }
 }
 
-a:focus {
-  outline: none;
-  padding-bottom: px-to-rem(6.4);
-  border-bottom: 2px solid $color-orange;
+a {
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    padding-bottom: px-to-rem(6.4);
+    border-bottom: 2px solid $color-orange;
+  }
 }

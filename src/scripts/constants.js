@@ -1,4 +1,4 @@
 export const constants = {
     slidesPerView: 3,
-    spaceBetweenSlides: 30
+    spaceBetweenSlides: 10
 }

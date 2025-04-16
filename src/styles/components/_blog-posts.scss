@@ -7,22 +7,22 @@
   justify-content: center;
   align-items: center;
 
-  &__slider {
-    display: flex;
-    flex-direction: row;
-  }
-
   &__navigator {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    img {
-      margin: 0 px-to-rem(16);
+
+    button {
+      border: none;
+      background: none;
+
+      &:disabled {
+        cursor: not-allowed;
+      }
     }
 
-    .prev-button,
-    .next-button {
-      cursor: pointer;
+    img {
+      margin: 0 px-to-rem(16);
     }
   }
 }

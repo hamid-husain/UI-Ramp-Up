@@ -2,18 +2,20 @@
 
 .blog-card {
   margin-top: px-to-rem(32);
-  height: 25vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   &__image {
     border-radius: px-to-rem(3.2);
-    width: px-to-rem(160);
-    height: px-to-rem(160);
+    width: px-to-rem(130);
+    height: px-to-rem(130);
     background-image: url('/src/assets/images/dog1.jpg');
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
+    display: flex;
+    justify-content: right;
   }
 
   &__content {
@@ -21,8 +23,12 @@
     flex-direction: column;
     justify-content: center;
     margin-left: px-to-rem(16);
-    height: 25vh;
-    width: px-to-rem(560);
+    height: 100%;
+    width: 60%;
+
+    h3 {
+      @include text-clamp(100%, 1);
+    }
 
     div {
       position: relative;
@@ -30,9 +36,12 @@
       font-size: px-to-rem(12.8);
       color: $latest-blogs-desc;
       padding-top: px-to-rem(24);
-      padding-bottom: px-to-rem(12.8);
-      padding-right: px-to-rem(8);
+      padding-right: px-to-rem(12);
       border-right: px-to-rem(2.4) solid $latest-blogs-card-content-border-right;
+
+      p {
+        @include text-clamp(100%, 2);
+      }
     }
 
     button {
@@ -43,9 +52,9 @@
       color: $color-white;
       font-size: px-to-rem(12.8);
       border: none;
-      position: relative;
-      top: px-to-rem(22.4);
-      right: px-to-rem(-464);
+      display: inherit;
+      margin-left: auto;
+      margin-top: px-to-rem(16);
     }
   }
 

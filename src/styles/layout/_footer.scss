@@ -7,10 +7,9 @@ footer {
 }
 
 .foot {
-  height: 50vh;
-  padding: px-to-rem(64) px-to-rem(64);
+  margin: px-to-rem(80) 0;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-evenly;
 
   &__brand {
@@ -18,7 +17,7 @@ footer {
     max-width: px-to-rem(352);
 
     p {
-      margin: px-to-rem(16) 0;
+      margin: px-to-rem(16) 0 px-to-rem(32);
       font-size: px-to-rem(14.4);
       color: $color-grey;
     }
@@ -30,7 +29,8 @@ footer {
         .facebook,
         .linkedin,
         .instagram {
-          margin: px-to-rem(24) px-to-rem(48) px-to-rem(24) 0;
+          cursor: pointer;
+          margin: px-to-rem(16) px-to-rem(48) px-to-rem(24) 0;
           border: px-to-rem(1.6) solid $color-orange;
           padding: px-to-rem(16);
           width: px-to-rem(12.8);
@@ -40,6 +40,11 @@ footer {
           background-position: center;
           background-size: px-to-rem(9.6);
           border-radius: 50%;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: scale(1.05);
+          }
         }
 
         .linkedin {
@@ -68,6 +73,15 @@ footer {
       list-style: none;
       line-height: px-to-rem(40);
       color: $color-grey;
+
+      a {
+        text-decoration: none;
+        color: $color-grey;
+
+        &:hover {
+          color: black;
+        }
+      }
     }
   }
 
@@ -80,6 +94,15 @@ footer {
       list-style: none;
       line-height: px-to-rem(40);
       color: $color-grey;
+
+      a {
+        text-decoration: none;
+        color: $color-grey;
+
+        &:hover {
+          color: black;
+        }
+      }
     }
   }
 
@@ -89,14 +112,17 @@ footer {
     ul {
       padding-top: px-to-rem(12);
       list-style: none;
-      line-height: px-to-rem(32);
+      line-height: px-to-rem(48);
       color: $color-grey;
+
+      li {
+        cursor: pointer;
+      }
     }
   }
 }
 
 .hline {
-  width: 88vw;
   height: px-to-rem(1.6);
   background-color: $footer-hline;
 }

@@ -9,92 +9,35 @@
 
   <body>
     <nav>
-      <div class="brand">
-        <img src="src/assets/images/JTGPOD-logo.png" alt="JTGPOD logo" />
-        <img src="src/assets/images/JTGPOD.png" alt="JTGPOD brand name" />
-      </div>
-      <div class="nav-list">
-        <ul>
-          <li><a href="#" class="nav-list__home_link">Home</a></li>
-          <li><a href="#" class="nav-list__about_link">About</a></li>
-          <li><a href="#" class="nav-list__blog_link">Blog</a></li>
-          <li><a href="#" class="nav-list__pages_link">Pages</a></li>
-          <li><a href="#" class="nav-list__contact_link">Contact</a></li>
-          <li>
-            <button>Subscribe</button>
-          </li>
-        </ul>
+      <div class="navbar container">
+        <div class="navbar__brand">
+          <img src="src/assets/images/JTGPOD-logo.png" alt="JTGPOD logo" />
+          <img src="src/assets/images/JTGPOD.png" alt="JTGPOD brand name" />
+        </div>
+        <div class="navbar__nav-list">
+          <ul>
+            <li><a href="#" class="navbar__home_link">Home</a></li>
+            <li><a href="/about" class="nav-list__about_link">About</a></li>
+            <li><a href="/blog" class="nav-list__blog_link">Blog</a></li>
+            <li><a href="/pages" class="nav-list__pages_link">Pages</a></li>
+            <li>
+              <a href="/contact" class="nav-list__contact_link">Contact</a>
+            </li>
+            <li>
+              <button>Subscribe</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <section class="latest-blogs">
       <div class="latest-blogs__top"></div>
-      <div class="latest-blogs__main">
+      <div class="latest-blogs__main container">
         <div class="latest-blogs__header">
-          <h1>Latest Blogs</h1>
+          <h1 class="heading-1">Latest Blogs</h1>
           <button>View All</button>
         </div>
-        <div class="latest-blogs__content">
-          <div class="blog-card">
-            <div class="blog-card__image"></div>
-            <div class="blog-card__content">
-              <h3>Visiting my best friend's city for the first time</h3>
-              <div>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque cupiditate amet quam tempora voluptatum?
-                </p>
-                <button>View</button>
-              </div>
-            </div>
-            <div class="blog-card__details">
-              <ul>
-                <li>Season 1</li>
-                <li>Posted on July 29, 2020</li>
-                <li>audio / goodbyes / life</li>
-              </ul>
-            </div>
-          </div>
-          <div class="blog-card">
-            <div class="blog-card__image"></div>
-            <div class="blog-card__content">
-              <h3>An interesting read I defenitely recommend</h3>
-              <div>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque cupiditate amet quam tempora voluptatum?
-                </p>
-                <button>View</button>
-              </div>
-            </div>
-            <div class="blog-card__details">
-              <ul>
-                <li>Season 1</li>
-                <li>Posted on Sept 3, 2020</li>
-                <li>goodbyes / life</li>
-              </ul>
-            </div>
-          </div>
-          <div class="blog-card">
-            <div class="blog-card__image"></div>
-            <div class="blog-card__content">
-              <h3>What if all my adventures go back home?</h3>
-              <div>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque cupiditate amet quam tempora voluptatum?
-                </p>
-                <button>View</button>
-              </div>
-            </div>
-            <div class="blog-card__details">
-              <ul>
-                <li>Season 1</li>
-                <li>Posted on Sept 11, 2020</li>
-                <li>audio / goodbyes</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <div class="latest-blogs__content"></div>
         <div class="latest-blogs__bottom">
           <button>Show More Episode</button>
         </div>
@@ -102,8 +45,8 @@
     </section>
 
     <section class="blog-posts">
-      <h1>Blog Posts</h1>
-      <div class="swiper">
+      <h1 class="heading-1">Blog Posts</h1>
+      <div class="swiper container">
         <div class="blog-posts__slider swiper-wrapper">
           <div class="slider-card swiper-slide">
             <div class="slider-card__ribbon">
@@ -118,7 +61,7 @@
             </div>
             <div class="slider-card__content">
               <div class="header">
-                <h3>
+                <h3 class="heading-3">
                   Global News Podcast Thai soldier kills many people a shooting
                   rampage
                 </h3>
@@ -143,7 +86,7 @@
             </div>
             <div class="slider-card__content">
               <div class="header">
-                <h3>
+                <h3 class="heading-3">
                   News hour - World Health Organization says a new coronavirus
                   cases.
                 </h3>
@@ -168,7 +111,7 @@
             </div>
             <div class="slider-card__content">
               <div class="header">
-                <h3>
+                <h3 class="heading-3">
                   Global News Podcast Thai soldier kills many people a shooting
                   rampage
                 </h3>
@@ -193,7 +136,7 @@
             </div>
             <div class="slider-card__content">
               <div class="header">
-                <h3>
+                <h3 class="heading-3">
                   News hour - World Health Organization says a new coronavirus
                   cases.
                 </h3>
@@ -218,7 +161,7 @@
             </div>
             <div class="slider-card__content">
               <div class="header">
-                <h3>
+                <h3 class="heading-3">
                   Global News Podcast Thai soldier kills many people a shooting
                   rampage
                 </h3>
@@ -243,7 +186,7 @@
             </div>
             <div class="slider-card__content">
               <div class="header">
-                <h3>
+                <h3 class="heading-3">
                   News hour - World Health Organization says a new coronavirus
                   cases.
                 </h3>
@@ -268,7 +211,7 @@
             </div>
             <div class="slider-card__content">
               <div class="header">
-                <h3>
+                <h3 class="heading-3">
                   Over to You - Programme face the axe substantial financial
                   cutbacks
                 </h3>
@@ -282,18 +225,18 @@
           </div>
         </div>
         <div class="blog-posts__navigator">
-          <div class="prev-button">
+          <button class="prev-button">
             <img src="src/assets/images/arrow-left.png" alt="" />
-          </div>
-          <div class="next-button">
+          </button>
+          <button class="next-button">
             <img src="src/assets/images/arrow-right.png" alt="" />
-          </div>
+          </button>
         </div>
       </div>
     </section>
 
     <footer>
-      <div class="foot">
+      <div class="foot container">
         <div class="foot__brand">
           <img src="src/assets/images/JTGPOD-logo.png" alt="JTGPOD logo" />
           <img src="src/assets/images/JTGPOD.png" alt="JTGPOD brand name" />
@@ -313,19 +256,19 @@
         <div class="foot__pages">
           Pages
           <ul>
-            <li>About</li>
-            <li>Episode</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Episode</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
         <div class="foot__recent-blogs">
           Recent Blogs
           <ul>
-            <li>Blog 1</li>
-            <li>Blog 2</li>
-            <li>Blog 3</li>
-            <li>Blog 4</li>
+            <li><a href="">Blog 1</a></li>
+            <li><a href="">Blog 2</a></li>
+            <li><a href="">Blog 3</a></li>
+            <li><a href="">Blog 4</a></li>
           </ul>
         </div>
         <div class="foot__partners">
@@ -343,7 +286,7 @@
           </ul>
         </div>
       </div>
-      <div class="hline"></div>
+      <div class="hline container"></div>
       <div class="copyright">&copy;2020 Josh Technology Group</div>
     </footer>
 
