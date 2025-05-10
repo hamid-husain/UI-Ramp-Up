@@ -1,0 +1,28 @@
+@use '../abstract' as *;
+
+.blog-posts {
+  margin-top: px-to-rem(32);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    button {
+      border: none;
+      background: none;
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+
+    img {
+      margin: 0 px-to-rem(16);
+    }
+  }
+}

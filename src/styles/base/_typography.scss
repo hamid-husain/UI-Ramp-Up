@@ -1,0 +1,89 @@
+@use '../abstract' as *;
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('@/assets/fonts/Montserrat/montserrat-v29-latin-300.woff2')
+    format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@/assets/fonts/Montserrat/montserrat-v29-latin-regular.woff2')
+    format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('@/assets/fonts/Montserrat/montserrat-v29-latin-500.woff2')
+    format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('@/assets/fonts/Montserrat/montserrat-v29-latin-600.woff2')
+    format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('@/assets/fonts/Montserrat/montserrat-v29-latin-700.woff2')
+    format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: url('@/assets/fonts/Montserrat/montserrat-v29-latin-800.woff2')
+    format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: url('@/assets/fonts/Montserrat/montserrat-v29-latin-900.woff2')
+    format('woff2');
+}
+
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+.heading-1 {
+  font-size: px-to-rem(29);
+  @extend .font-bold;
+}
+
+.heading-2 {
+  font-size: px-to-rem(25);
+  @extend .font-bold;
+}
+
+.heading-3 {
+  font-size: px-to-rem(19.5);
+  @extend .font-bold;
+}

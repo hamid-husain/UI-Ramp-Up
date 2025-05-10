@@ -1,0 +1,46 @@
+@use '../abstract' as *;
+
+nav {
+  background-color: $nav-bg;
+  padding: px-to-rem(16) 0 px-to-rem(32);
+
+  .navbar {
+    padding-top: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &__nav-list {
+      ul {
+        li {
+          margin: px-to-rem(16);
+          text-decoration: none;
+          display: inline-block;
+          margin-right: 0;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: $color-black;
+        font-size: px-to-rem(12.8);
+      }
+
+      button {
+        border: none;
+        background-color: $color-orange;
+        height: px-to-rem(32);
+        width: px-to-rem(112);
+        color: $color-white;
+        border-radius: px-to-rem(3.2);
+        font-size: px-to-rem(12.8);
+      }
+    }
+
+    &__home_link {
+      color: $color-orange !important;
+      padding-bottom: px-to-rem(6.4);
+      border-bottom: px-to-rem(1.6) solid $color-orange;
+    }
+  }
+}

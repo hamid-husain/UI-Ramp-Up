@@ -1,0 +1,85 @@
+@use '../abstract' as *;
+
+.blog-card {
+  margin-top: px-to-rem(32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__image {
+    border-radius: px-to-rem(3.2);
+    width: px-to-rem(130);
+    height: px-to-rem(130);
+    background-image: url('/src/assets/images/dog1.jpg');
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: px-to-rem(16);
+    height: 100%;
+    width: 60%;
+
+    h3 {
+      @include text-clamp(100%, 1);
+    }
+
+    div {
+      position: relative;
+      top: px-to-rem(-8);
+      font-size: px-to-rem(12.8);
+      color: $latest-blogs-desc;
+      padding-top: px-to-rem(24);
+      padding-right: px-to-rem(12);
+      border-right: px-to-rem(2.4) solid $latest-blogs-card-content-border-right;
+
+      p {
+        @include text-clamp(100%, 2);
+      }
+    }
+
+    button {
+      height: px-to-rem(32);
+      width: px-to-rem(80);
+      border-radius: px-to-rem(3.2);
+      background-color: $color-orange;
+      color: $color-white;
+      font-size: px-to-rem(12.8);
+      border: none;
+      display: inherit;
+      margin-left: auto;
+      margin-top: px-to-rem(16);
+    }
+  }
+
+  &__details {
+    color: $color-grey;
+    margin-left: px-to-rem(19.2);
+    font-size: px-to-rem(12.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: px-to-rem(16);
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: px-to-rem(12.8);
+    }
+
+    li::before {
+      content: '#';
+      margin-right: px-to-rem(4.8);
+    }
+  }
+}
